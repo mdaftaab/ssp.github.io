@@ -43,6 +43,21 @@ var swiper = new Swiper(".timelineSwiper", {
     },
 });
 
+var swiper = new Swiper(".innovationSwiper", {
+    // loop: true,
+    slidesPerView: 3.5,
+    spaceBetween:20,
+    // centeredSlides: true,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 $('#counter').waypoint(function() {
     // Counter animation code
     $('.count').each(function () {

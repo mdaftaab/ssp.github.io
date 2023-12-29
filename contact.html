@@ -34,7 +34,13 @@
             <li class="nav-item">
               <a class="nav-link" href="javascript:void(0)">Equipments</a>
             </li>
-            <li><a href="#"><img src="images/blog.png" alt=""> <span>EN</span></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><img src="images/blog.png" alt=""> <span>EN</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EN</a></li>
+                <li><a class="dropdown-item" href="#">HI</a></li>
+                <li><a class="dropdown-item" href="#">JP</a></li>
+              </ul>
             </li>
             <li>
               <a href="#"><img src="images/bar.png" alt=""></a>
@@ -274,6 +280,70 @@
       </div>
     </div>
   </section>
+  <section class="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h3>Frequently Asked Questions</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div id="accordion">
+            <div class="card active">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#questions1">
+                  When the world’s most popular and profitable brands look for the most dependable?
+                </a>
+              </div>
+              <div id="questions1" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">                  
+                  <p>For over forty years we have developed the science and art for food, pharmaceutical, chemicals, and waste processing plants. Yet we keep exploring new frontiers through our full-scale R&D facility extracting valuable products from various sources.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#questions2">
+                  When the world’s most popular and profitable brands?
+                </a>
+              </div>
+              <div id="questions2" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Reiciendis labore alias quis perspiciatis quam quos aspernatur. Dicta, sint explicabo non!</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#questions3">
+                  When the world’s most popular and profitable brands look for the most dependable?
+                </a>
+              </div>
+              <div id="questions3" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Reiciendis labore alias quis perspiciatis quam quos aspernatur. Dicta, sint explicabo non!</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#questions4">
+                  World’s most popular and profitable brands look for the most dependable?
+                </a>
+              </div>
+              <div id="questions4" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Reiciendis labore alias quis perspiciatis quam quos aspernatur. Dicta, sint explicabo non!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- --------------->
   <footer>
     <div class="container">
@@ -376,5 +446,27 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.3.4/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.3.4/dist/ScrollTrigger.js"></script>
 <script src="js/custom.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var cardHeaders = document.querySelectorAll('.card-header');
+    cardHeaders.forEach(function (header) {
+      header.addEventListener('click', function () {
+        var parentCard = this.closest('.card');
+        var isActive = parentCard.classList.contains('active');
+
+        // Close all cards
+        var allCards = document.querySelectorAll('.card');
+        allCards.forEach(function (card) {
+          card.classList.remove('active');
+        });
+
+        // Toggle the 'active' class only if the clicked card was not active
+        if (!isActive) {
+          parentCard.classList.add('active');
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>

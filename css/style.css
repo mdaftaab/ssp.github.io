@@ -21,6 +21,8 @@ header { position: fixed; width: 100%; height: 104px; margin: 0 0 0 -1px; z-inde
 #slider .carousel-caption h3 { display: flex; align-items: flex-start; justify-content: flex-start; position: relative; color: #ffffff; font-size: 150px; font-weight: 500; line-height: 146px; text-align: left; text-overflow: initial; z-index: 4; }
 header nav a.nav-link { color: #fff; font-size: 18px; font-style: normal; font-weight: 500; line-height: normal; }
 header nav a.nav-link:hover {color: #1e43a0;}
+header nav .dropdown-toggle::after {display: none;}
+.navbar-expand-sm .navbar-nav .dropdown-menu {right: 0px;left: auto;}
 .navbar-expand-sm .navbar-nav { gap: 30px; }
 header nav li a span { color: #ffffff; font-size: 18px; font-weight: 500; line-height: 21.946px; text-align: left; white-space: nowrap; display: inline-block; position: relative; top: 4px; left: 3px; width: 45px; background: url(../images/angal-down-white.png); background-repeat: no-repeat; background-position: center right; background-size: 13px; }
 header nav li a { display: block; text-decoration: none; }
@@ -89,7 +91,7 @@ header nav li { display: flex; align-items: center; justify-content: center; }
 .certifications h3 { color: #272727; font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; }
 .certifications p { color: #535353; text-align: center; font-size: 16px; font-style: normal; font-weight: 400; line-height: 22px; }
 
-.share { padding: 60px 0; }
+.share {padding: 40px 0;}
 .share .share-img img { max-width: 100%; }
 .share h3 { color: #272727; font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; }
 .share p { color: #535353; font-size: 20px; font-style: normal; font-weight: 400; line-height: 28px; }
@@ -149,7 +151,7 @@ span.time { border-radius: 10px; background: #FFF; box-shadow: 0px 0px 20px 0px 
 .inner-slider .carousel-caption h3 { justify-content: center !important; text-align: center !important; }
 
 /*---- Contact Us-----*/
-.get-touch { padding: 60px 0; }
+.get-touch {padding: 40px 0;}
 .get-touch h3 { color: #272727;font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; }
 .get-touch p { color: #535353;font-size: 16px; font-style: normal; font-weight: 400; line-height: 26px; }
 
@@ -165,7 +167,7 @@ span.time { border-radius: 10px; background: #FFF; box-shadow: 0px 0px 20px 0px 
 .map-box .tab-content { overflow: hidden; border-radius: 10px; }
 .map-box .tab-content .tab-pane { padding: 0; }
 
-.contact-details { padding: 60px 0; }
+.contact-details {padding: 40px 0;}
 .contact-details h3 { color: #272727;font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; }
 .contact-details p { color: #535353;font-size: 16px; font-style: normal; font-weight: 400; line-height: 26px; }
 .contact-details .info p { color: #272727;font-size: 18px; font-style: normal; font-weight: 400; line-height: 26px; }
@@ -181,3 +183,33 @@ span.time { border-radius: 10px; background: #FFF; box-shadow: 0px 0px 20px 0px 
 .project .tab-content ul li:first-child { border-top: none; }
 .project a.nav-link { color: #272727; text-align: center; font-family: var(--font2); font-size: 18px; font-style: normal; font-weight: 500; line-height: normal; }
 .project a.nav-link.active { color: #1F43A1; font-family: var(--font2); font-size: 18px; font-style: normal; font-weight: 500; line-height: normal; }
+.project { padding: 40px 0; }
+.addresses { padding: 40px 0; }
+.faq{padding: 40px 0;}
+.faq h3 { color: #272727; font-size: 50px; font-style: normal; font-weight: 400; line-height: 56px; }
+.faq #accordion .card-header a {color: #272727;font-size: 20px;font-style: normal;font-weight: 500;line-height: 30px;padding-left: 0;}
+.faq #accordion .card-body p { color: #535353;font-size: 16px; font-style: normal; font-weight: 400; line-height: 28px; }
+.faq #accordion .card-header { border-radius: 10px !important; background: #FFF; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15); border: none; margin-bottom: 15px; }
+.faq #accordion .collapse { border-radius: 10px !important; background: #FFF; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15); border: none; margin-bottom: 15px; }
+.faq #accordion .card { border: none; }
+.faq #accordion .card.active .card-header { margin-bottom: 0; box-shadow: 0px -10px 20px 0px rgb(0 0 0 / 15%); padding-bottom: 0; border-radius: 10px 10px 0 0 !important; }
+.faq #accordion .card.active .collapse { box-shadow: 0px 15px 20px 0px rgb(0 0 0 / 15%); border-radius: 0 0 10px 10px !important; }
+.faq #accordion .card.active .collapse .card-body { padding-top: 0; }
+.faq #accordion .card-header a:active {border: none;}
+.faq #accordion .card .card-header:after { content: '+'; font-size: 22px; position: absolute; right: 25px; top: 15px; font-weight: 600; }
+.faq #accordion .card.active .card-header:after { content: '-'; }
+
+/* -------- Infrastructure ----- */
+.our-locations { padding: 40px 0; }
+.our-locations h3 { color: #272727;font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; }
+.our-locations p { color: #535353;font-size: 16px; font-style: normal; font-weight: 400; line-height: 24px; }
+.our-locations h5 { color: #014088;font-size: 20px; font-style: normal; font-weight: 500; line-height: 28px; margin-top: 15px; }
+
+.innovation-centre h3 { color: #272727;font-size: 40px; font-style: normal; font-weight: 400; line-height: 40px; }
+.innovation-centre p { color: #535353;font-size: 16px; font-style: normal; font-weight: 400; line-height: 26px; }
+
+.latest-innovation .swiper-slide { border-radius: 10px; background: #F1F9F9 !important; flex-direction: column; padding: 15px 30px; text-align: left; align-items: self-start; }
+.latest-innovation .swiper-slide h4 { color: #272727;font-size: 16px; font-style: normal; font-weight: 500; line-height: 22px; }
+.latest-innovation .swiper-slide ul { padding: 0; }
+.latest-innovation .swiper-slide ul li { color: #535353;font-size: 16px; font-style: normal; font-weight: 400; line-height: 22px; }
+.latest-innovation .swiper-slide ul li::marker{color:#1F43A1;; }
