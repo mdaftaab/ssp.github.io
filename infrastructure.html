@@ -39,20 +39,29 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">EN</a></li>
                 <li><a class="dropdown-item" href="#">HI</a></li>
-                <li><a class="dropdown-item" href="#">JP</a></li>
               </ul>
             </li>
             <li>
-              <a href="#"><img src="images/bar.png" alt=""></a>
+              <a class="openbtn" onclick="openNav()"><img src="images/bar.png" alt=""></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <i class="fa-solid fa-xmark"></i>
+    </a>
+    <ul>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="#">Clients</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
   <div id="slider">
     <div id="demo" class="carousel slide inner-slider" data-bs-ride="carousel">
-      <!-- The slideshow/carousel -->
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="images/img6.png" alt="" class="d-block" style="width:100%">
@@ -101,7 +110,7 @@
     </div>
   </section>
   <section class="latest-innovation">
-    <div class="container">
+    <div class="container-fluid px-0">
       <div class="row">
         <div class="col-12">
           <h3>Latest Innovation</h3>
@@ -112,53 +121,164 @@
           <div class="swiper innovationSwiper button-bottom">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <h4>Protein and Nutraceuticals</h4>
                 <ul>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
+                  <li>Evaporator without Condenser system</li>
+                  <li>Freeze drying system</li>
+                  <li>Aroma recovery system for Pure Aroma</li>
+                  <li>Spray dryer cum agglomorator</li>
+                  <li>High pressure extraction system for improvement in quality and yield</li>
                 </ul>
               </div>
               <div class="swiper-slide">
                 <h4>Protein and Nutraceuticals</h4>
                 <ul>
                   <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
+                  <li>Soya Protein Isolate Plant</li>
+                  <li>Ground Nut Protein Isolate Plant</li>
+                  <li>Pea Nut Protein Plant</li>
+                  <li>Algae Protein Plant</li>
                 </ul>
               </div>
               <div class="swiper-slide">
-                <h4>Protein and Nutraceuticals</h4>
+                <h4>Extraction of Valuables from Agro-Waste</h4>
                 <ul>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
+                  <li>Protein, Ortho-Silicic Acid, Alcohol, CO2 From De-Oiled Rice Bran</li>
+                  <li>Cellulose, Alcohol From Rice Stubble</li>
                 </ul>
               </div>
               <div class="swiper-slide">
-                <h4>Protein and Nutraceuticals</h4>
+                <h4>Extraction of Valuables from Industrial Waste</h4>
                 <ul>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
+                  <li>Potash Recovery From Molasses Based Distillery Boiler Ash</li>
+                  <li>Recovery Of Water And Salt From Desalination Plant Rejects</li>
                 </ul>
-              </div>
-              <div class="swiper-slide">
-                <h4>Protein and Nutraceuticals</h4>
-                <ul>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
-                  <li>Nutraceuticals Formulation Plant</li>
-                </ul>
-              </div>
+              </div>              
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="works">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#work1">
+                  Chandpur Works
+                </a>
+              </div>
+              <div id="work1" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <p>Chandpur works: area of 8228 sq. Meters is a workshop equipped with fully automated latest generation machines run by highly skilled workforce.</p>
+                      <p>High pressure extraction system for improvement in quality and yield.</p>
+                      <a href="#" class="btn btn-custom">View Address <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="col-8">
+                      <div class="gallery">
+                        <div class="div1">
+                          <img src="images/img16.png" alt="">
+                        </div>
+                        <div class="div2">
+                          <img src="images/img3.png" alt="">
+                        </div>
+                        <div class="div3">
+                          <img src="images/img-15.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#work2">
+                  Nagpur Works
+                </a>
+              </div>
+              <div id="work2" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <p>Nagpur Works: area of 8228 sq. Meters is a workshop equipped with fully automated latest generation machines run by highly skilled workforce.</p>
+                      <p>High pressure extraction system for improvement in quality and yield.</p>
+                      <a href="#" class="btn btn-custom">View Address <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="col-8">
+                      <div class="gallery">
+                        <div class="div1">
+                          <img src="images/img16.png" alt="">
+                        </div>
+                        <div class="div2">
+                          <img src="images/img3.png" alt="">
+                        </div>
+                        <div class="div3">
+                          <img src="images/img-15.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#work3">
+                  Sitarganj Works
+                </a>
+              </div>
+              <div id="work3" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <p>Sitarganj Works: area of 8228 sq. Meters is a workshop equipped with fully automated latest generation machines run by highly skilled workforce.</p>
+                      <p>High pressure extraction system for improvement in quality and yield.</p>
+                      <a href="#" class="btn btn-custom">View Address <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="col-8">
+                      <div class="gallery">
+                        <div class="div1">
+                          <img src="images/img16.png" alt="">
+                        </div>
+                        <div class="div2">
+                          <img src="images/img3.png" alt="">
+                        </div>
+                        <div class="div3">
+                          <img src="images/img-15.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="profile">
+    <div class="container">
+      <div class="row profile-div">
+        <div class="col-6 pe-0">
+          <div class="profile-img">
+            <img src="images/img-21.png" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-6 ps-0">
+          <div class="profile-text">
+            <h3>Company Profile</h3>
+            <p>SSP brings the world’s most respected quality certifications to your service. Quality is assured at every stage by a empowered and dedicated team of quality professionals.</p>
+            <a href="#" class="btn btn-custom">Company Brochure <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>        
       </div>
     </div>
   </section>

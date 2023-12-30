@@ -39,71 +39,149 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">EN</a></li>
                 <li><a class="dropdown-item" href="#">HI</a></li>
-                <li><a class="dropdown-item" href="#">JP</a></li>
               </ul>
             </li>
             <li>
-              <a href="#"><img src="images/bar.png" alt=""></a>
+              <a class="openbtn" onclick="openNav()"><img src="images/bar.png" alt=""></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <i class="fa-solid fa-xmark"></i>
+    </a>
+    <ul>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="#">Clients</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
   <div id="slider">
-    <div id="demo" class="carousel slide inner-slider" data-bs-ride="carousel">
-      <!-- Indicators/dots -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-      </div>
-
-      <!-- The slideshow/carousel -->
+    <div id="demo" class="carousel slide inner-slider" data-bs-ride="carousel">      
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/img-18.png" alt="" class="d-block" style="width:100%">
-          
+          <img src="images/img-14.png" alt="" class="d-block" style="width:100%">          
           <div class="carousel-caption">
-            <h3>About Us</h3>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/img8.png" alt="" class="d-block" style="width:100%">
-          <div class="carousel-caption">
-            <h3>World of <br />
-              Possibilities</h3>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/img6.png" alt="" class="d-block" style="width:100%">
-          <div class="carousel-caption">
-            <h3>World of <br />
-              Possibilities</h3>
+            <h3>Blogs</h3>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- --------------->
-
-  <!-- --------------->
-  <section class="share">
+  <section class="featured">
     <div class="container">
       <div class="row">
-        <div class="col-8">
-          <h3>Let's stay in touch!</h3>
-          <p class="col-9">We are always ready to start an informal dialogue and explore where this can take us.</p>
-          <a href="#" class="btn btn-custom">Contact Us <i class="fa-solid fa-arrow-right-long"></i></a>
+        <div class="col-12">
+          <h3>Featured</h3>
         </div>
-        <div class="col-4 text-center">
-          <div class="share-img">
-            <img src="images/ssp-tagline.png" alt="">
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <img src="images/img-12.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-6">
+          <span class="date">February 14, 2023</span>
+          <h4>Supply Chain Network Revamps Top Software & Tech Award: Submissions Close Sept. 22</h4>
+          <p>Discover on-page SEO tips to optimize your blog content to make it organically rank and easily searchable. Discover on-page SEO tips to optimize your blog content to make it organically rank and easily searchable.</p>
+          <a href="#" class="btn btn-link">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
         </div>
       </div>
     </div>
   </section>
+  <section class="latest-updates">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3>Latest Updates</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="post">
+            <div class="post-img">
+              <img src="images/img-11.png" alt="" class="img-fluid">
+            </div>
+            <span class="date">
+              February 14, 2023
+            </span>
+            <h3>Adoption of village chandpur, tehsil ballabhgarh, faridabad, haryana</h3>
+            <a href="#" class="btn btn-link">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="post">
+            <div class="post-img">
+              <img src="images/img7.png" alt="" class="img-fluid">
+            </div>
+            <span class="date">
+              February 14, 2023
+            </span>
+            <h3>How Robots Create Safer Workplace for Warehouse Employees</h3>
+            <a href="#" class="btn btn-link">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="post">
+            <div class="post-img">
+              <img src="images/img5.png" alt="" class="img-fluid">
+            </div>
+            <span class="date">
+              February 14, 2023
+            </span>
+            <h3>Product Out-of-Stocks Up 6% YOY, Posing Pressure on Supply Chain</h3>
+            <a href="#" class="btn btn-link">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="post">
+            <div class="post-img">
+              <img src="images/img-13.png" alt="" class="img-fluid">
+            </div>
+            <span class="date">
+              February 14, 2023
+            </span>
+            <h3>Temperature Management Solution for Refrigerated Trucks, Trailers</h3>
+            <a href="#" class="btn btn-link">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="post">
+            <div class="post-img">
+              <img src="images/img-19.png" alt="" class="img-fluid">
+            </div>
+            <span class="date">
+              February 14, 2023
+            </span>
+            <h3>SCN Summit: Future of the Supply Chain Opens Registration</h3>
+            <a href="#" class="btn btn-link">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="post">
+            <div class="post-img">
+              <img src="images/img1.png" alt="" class="img-fluid">
+            </div>
+            <span class="date">
+              February 14, 2023
+            </span>
+            <h3>Drayage Industry to See Increased Investments: Study</h3>
+            <a href="#" class="btn btn-link">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#" class="btn btn-custom">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <!-- --------------->
   <footer>
     <div class="container">
       <div class="row">

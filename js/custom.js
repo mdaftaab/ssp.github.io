@@ -44,7 +44,7 @@ var swiper = new Swiper(".timelineSwiper", {
 });
 
 var swiper = new Swiper(".innovationSwiper", {
-    // loop: true,
+    loop: true,
     slidesPerView: 3.5,
     spaceBetween:20,
     // centeredSlides: true,
@@ -58,8 +58,9 @@ var swiper = new Swiper(".innovationSwiper", {
     },
 });
 
+
+// Counter animation code
 $('#counter').waypoint(function() {
-    // Counter animation code
     $('.count').each(function () {
         $(this).prop('Counter', 0).animate({
             Counter: $(this).text()
@@ -72,3 +73,12 @@ $('#counter').waypoint(function() {
         });
     }, { offset: '80%' });
 }, { offset: '80%' });
+
+// ---------- SideBar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
