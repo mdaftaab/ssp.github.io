@@ -58,6 +58,19 @@ var swiper = new Swiper(".innovationSwiper", {
     },
 });
 
+var swiper = new Swiper(".counterSwiper", {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween:20,
+    autoplay: {
+     delay: 3000,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 
 // Counter animation code
 $('#counter').waypoint(function() {
