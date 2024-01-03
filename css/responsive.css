@@ -62,7 +62,6 @@
 	.innovation-centre h3,
 	.latest-innovation h3,
 	.works .card .card-header a { font-size: 32px; line-height: 40px; }
-	}
 	.latest-innovation { padding: 20px; }
 	.latest-updates .post { padding-right: 7px; }
 	.latest-updates .post .post-img img { width: 100%; }
@@ -75,6 +74,8 @@
 	.patents-box { top: 15px; }
 	.patentsSwiper.button-top .swiper-button-prev { left: 40%; transform: translateX(-50%); top: auto; bottom: 0; }
 	.patentsSwiper.button-top .swiper-button-next { left: 60%; transform: translateX(-50%); top: auto; bottom: 0; }
+
+}
 @media only screen and (max-width:375px){
 
 }
