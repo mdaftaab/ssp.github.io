@@ -154,3 +154,20 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
 }
+
+jQuery(document).ready(function () {
+  
+    setTimeout(function () {
+      jQuery('#myPopup').modal('show');
+    }, 0);
+
+  // jQuery('.btn-yes').on('click', function () {
+  //   jQuery('#myModal').modal('hide');
+  //   Cookies.set('modalShown', 'true', { expires: 7 });
+  // });
+  
+  // jQuery('.btn-no').on('click', function () {
+  //   Cookies.remove('modalShown');
+  // });
+  
+});
