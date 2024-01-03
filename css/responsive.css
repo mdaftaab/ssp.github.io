@@ -8,7 +8,52 @@
 }
 @media only screen and (max-width:767px){
     /* For mobile phones: */
-
+	header nav li.nav-item.extra { display: inline-block; }
+	#slider { margin-top: 58px; }
+	.navbar.navbar-expand-sm { background: #000; }
+	.navbar-brand { width: 20%; }
+	button.navbar-toggler { position: absolute; right: 5px; top: 13px; color: #fff; z-index: 99; font-size: 26px; }
+	#slider .carousel-caption h3 { font-size: 40px; line-height: 50px; }
+	#slider .carousel-caption { bottom: 20px; }
+	.navbar-toggler:focus { box-shadow: none; }
+	#mynavbar { background: rgb(0 0 0 / 80%); padding: 20px; padding-top: 30px; position: absolute; top: 60px; left: 0; width: 100%; z-index: 9; }
+	.navbar-expand-sm .navbar-nav { margin: 0; align-items: flex-start; gap: 10px; }
+	#mynavbar li.sidebar-btn { display: none; }
+	#mynavbar li.nav-item.dropdown { display: none; }
+	.about-us .text-box h2 { font-size: 22px; }
+	section.about-us .text-box { padding-top: 20px; }
+	.our-service { padding-left: 0; }
+	.serviceSwiper.button-bottom .swiper-button-prev { left: 40%; transform: translateX(-50%); }
+	.serviceSwiper.button-bottom .swiper-button-next { left: 60%; transform: translateX(-50%); }
+	.global-presence h3 { font-size: 22px; }
+	.global-presence p { width: 75%; }
+	.our-service h3 { font-size: 26px; }
+	.certifications h3 { font-size: 26px; line-height: 32px; }
+	.share h3 { font-size: 26px; line-height: 32px; }
+	.certificationSwiper.button-bottom .swiper-button-next { left: 60%; transform: translateX(-50%); }
+	.certificationSwiper.button-bottom .swiper-button-prev { left: 40%; transform: translateX(-50%); }
+	#slider .slide.inner-slider .carousel-caption h3 { font-size: 32px; }
+	.mission-box { padding: 45px 30px 20px; text-align: center; }
+	.timelineSwiper.button-bottom .swiper-button-prev { left: 40%; transform: translateX(-50%); }
+	.timelineSwiper.button-bottom .swiper-button-next { left: 60%; transform: translateX(-50%); }
+	.quality h3,
+	.patents h3,
+	.mission-box h2,
+	.timeline h3,
+	.get-touch h3,
+	.addresses h3,
+	.contact-details h3,
+	.project h3,
+	.faq h3 { font-size: 32px; line-height: 40px; }
+	.addresses .tab-box { height: auto; margin-bottom: 30px; }
+	.info { padding: 20px; border-bottom: 1px solid #ddd; }
+	.project a.nav-link { font-size: 16px; background: #ddd; }
+	.project a.nav-link.active { font-size: 17px; background: #b7b7b7; }
+	ul.nav.nav-tabs.nav-justified { gap: 10px; flex-direction: column; }
+	.get-touch,
+	.addresses,
+	.project,
+	.contact-details { padding-bottom: 0; }
 }
 @media only screen and (max-width:375px){
 

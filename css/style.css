@@ -16,6 +16,7 @@ header { position: fixed; width: 100%; height: 104px; margin: 0 0 0 -1px; z-inde
 .navbar.navbar-expand-sm { position: absolute; width: 100%; height: 62.5%; top: 0; left: 0; background: rgba(0, 0, 0, 0.8); z-index: 98; }
 .navbar-brand { position: absolute; width: 7.75%; height: 100%; top: 0; left: 6.14%; z-index: 106; padding: 0; }
 .navbar-brand img { max-width: 100%; }
+header nav li.nav-item.extra {display: none;}
 .sidebar {height: 100%;width: 0;position: fixed;z-index: 9999;top: 0;right: 0;background-color: #111;overflow-x: hidden;transition: 0.5s;padding-top: 60px;}
 .sidebar a {padding: 8px 8px 8px 32px;text-decoration: none;font-size: 23px;color: #fff;display: block;transition: 0.3s;}
 .sidebar a:hover {color: #5eb3fd;}
@@ -44,7 +45,7 @@ header nav li { display: flex; align-items: center; justify-content: center; }
 .play-button-wrapper { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; width: 100%; height: auto; pointer-events: none; }
 .play-button-wrapper #circle-play-b { cursor: pointer; pointer-events: auto; }
 .play-button-wrapper #circle-play-b img { width: 62px; height: 62px; fill: #fff; stroke: #fff; cursor: pointer; background-color: rgba(0, 0, 0, 0.2); border-radius: 50%; opacity: 0.9; }
-.about-us { padding: 60px 0; }
+.about-us {padding: 40px 0;}
 
 .count-box h3 { margin: 20px 0; font-size: 60px; font-weight: 700; line-height: 46px; text-align: center; white-space: nowrap; background: linear-gradient(166.83deg, #014088, #b0cbeb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .count-box { text-align: center; }
