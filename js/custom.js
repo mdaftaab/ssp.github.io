@@ -1,67 +1,112 @@
 var swiper = new Swiper(".serviceSwiper", {
-	// loop: true,
-	slidesPerView: 3.5,
-	spaceBetween:20,
-	// centeredSlides: true,
-	// pagination: {
-	//   el: ".swiper-pagination",
-	//   clickable: true,
-	// },
 	navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 3.5,
+          spaceBetween: 20,
+        },
+    }
 });
 
 var swiper = new Swiper(".certificationSwiper", {
 	loop: true,
-	slidesPerView: 4,
-	spaceBetween:20,
 	navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+    }
 });
 
 var swiper = new Swiper(".patentsSwiper", {
-	// loop: true,
-	slidesPerView: 4,
-	spaceBetween:20,
 	navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+    }
 });
 
 var swiper = new Swiper(".timelineSwiper", {
-	// loop: true,
-	slidesPerView: 4,
-	spaceBetween:0,
 	navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 0,
+        },
+    }
 });
 
 var swiper = new Swiper(".innovationSwiper", {
     loop: true,
-    slidesPerView: 3.5,
-    spaceBetween:20,
-    // centeredSlides: true,
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 3.5,
+          spaceBetween: 20,
+        },
+    }
 });
 
 var swiper = new Swiper(".counterSwiper", {
     loop: true,
-    slidesPerView: 4,
-    spaceBetween:20,
     autoplay: {
      delay: 3000,
     },
@@ -69,6 +114,20 @@ var swiper = new Swiper(".counterSwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 1,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+    }
 });
 
 
