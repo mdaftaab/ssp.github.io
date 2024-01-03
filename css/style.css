@@ -39,7 +39,9 @@ header nav li { display: flex; align-items: center; justify-content: center; }
 .btn-custom {background: #b0ebe7;border-radius: 40px;color: #014088;font-size: 17px;font-style: normal;font-weight: 500;line-height: 32px;margin: 10px 0;padding: 8px 24px;position: relative;}
 .btn-custom svg { position: relative; right: -6px; top: 1px; }
 .btn-custom:hover { background: #67ebe2; }
-
+#myPopup .modal-body {padding: 0;}
+#myPopup .modal-content {padding: 0;}
+#myPopup .modal-dialog.modal-lg {top: 50px;}
 .video-container { position: relative; }
 .video-container video { width: 100%; height: 100%; border-radius: 4px; }
 .play-button-wrapper { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; width: 100%; height: auto; pointer-events: none; }
@@ -139,11 +141,21 @@ ul.social { padding: 0; list-style: none; display: flex; gap: 30px; flex-directi
 .timelineSwiper .swiper-slide {display: flex;flex-direction: column;position: relative;}
 .timelineSwiper.button-bottom .swiper-button-prev { left: calc(50% - 40px); bottom: 0px; top: auto; }
 .timelineSwiper.button-bottom .swiper-button-next { left: calc(50% + 40px); bottom: 0px; top: auto; }
-.timeline-text {padding: 6px 30px;position: absolute;top: -45px;display: flex;flex-direction: column-reverse;}
+.timeline-text {padding: 6px 30px;position: absolute;top: -80px;display: flex;flex-direction: column-reverse;}
 .timelineSwiper .swiper-slide.slide1 .timeline-text,
 .timelineSwiper .swiper-slide.slide3 .timeline-text,
 .timelineSwiper .swiper-slide.slide5 .timeline-text {top: 60px;display: flex;flex-direction: column;}
-.timelineSwiper.button-bottom { padding: 50px 0 130px; }
+.timelineSwiper.button-bottom { padding:65px 0 130px; }
+.timeline-text{
+	    transition: all 0.5s;
+	    cursor: pointer;
+}
+.timeline-text:hover {
+        box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 15%);
+        background: #fff;
+        border-radius: 10px;
+        transform: scale(1.1);
+}
 span.time { border-radius: 10px; background: #FFF; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15); display: inline-block; width: 100px; margin: 0 auto; padding: 5px; }
 .patents h3 { color: #272727;font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; }
 .patents p { color: #535353;font-size: 16px; font-style: normal; font-weight: 400; line-height: 26px; }
@@ -247,3 +259,25 @@ span.date { color: #B7B7B7; font-size: 16px; font-style: normal; font-weight: 40
 .latest-updates h3 { color: #272727; font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; margin-bottom: 25px; }
 .latest-updates .post h3 { color: #373737; font-size: 18px; font-style: normal; font-weight: 500; line-height: 26px; margin: 10px 0; }
 .latest-updates .post { margin: 20px 0; padding-right: 20px; }
+.clients-logo {
+    padding: 40px 0;
+}
+ul.logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+}
+
+ul.logo-list li {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+    flex: 0 0 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 138px;
+    flex-shrink: 0;
+}

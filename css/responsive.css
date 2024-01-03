@@ -54,7 +54,27 @@
 	.addresses,
 	.project,
 	.contact-details { padding-bottom: 0; }
-}
+	.innovationSwiper.button-bottom .swiper-button-prev { left: 40%; transform: translateX(-50%); }
+	.innovationSwiper.button-bottom .swiper-button-next { left: 60%; transform: translateX(-50%); }
+	.works .gallery img { width: 100%; }
+	.works .gallery .div1 img { height: 100%; }
+	.our-locations h3,
+	.innovation-centre h3,
+	.latest-innovation h3,
+	.works .card .card-header a { font-size: 32px; line-height: 40px; }
+	}
+	.latest-innovation { padding: 20px; }
+	.latest-updates .post { padding-right: 7px; }
+	.latest-updates .post .post-img img { width: 100%; }
+	.featured h3,
+	.latest-updates h3 { font-size: 32px; line-height: 40px; }
+	.featured h4 { font-size: 24px; line-height: 32px; }
+	.featured,
+	.latest-updates { padding-bottom: 0; }
+	section.patents .patentsSwiper.button-top { padding-top: 0; padding-bottom: 70px; }
+	.patents-box { top: 15px; }
+	.patentsSwiper.button-top .swiper-button-prev { left: 40%; transform: translateX(-50%); top: auto; bottom: 0; }
+	.patentsSwiper.button-top .swiper-button-next { left: 60%; transform: translateX(-50%); top: auto; bottom: 0; }
 @media only screen and (max-width:375px){
 
 }
