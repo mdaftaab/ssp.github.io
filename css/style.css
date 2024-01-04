@@ -36,7 +36,8 @@ header nav li { display: flex; align-items: center; justify-content: center; }
 .carousel-indicators [data-bs-target] { width: 18px; max-height: 18px; height: 0px; border-radius: 100%; aspect-ratio: 1/1; background: #606060; }
 .carousel-indicators .active { background: #b0ebe7; }
 .about-us .text-box h2 { color: #272727; font-size: 30px; font-style: normal; font-weight: 400; line-height: 40px; }
-.btn-custom {background: #b0ebe7;border-radius: 40px;color: #014088;font-size: 17px;font-style: normal;font-weight: 500;line-height: 32px;margin: 10px 0;padding: 8px 24px;position: relative;}
+.btn-custom {background: #b0ebe7;border-radius: 40px;color: #014088;font-size: 17px;font-style: normal;font-weight: 500;line-height: 32px;margin: 10px 0;padding: 8px 24px;position: relative;transition: all 0.5s;}
+.btn-custom:hover {transform: scale(0.9);}
 .btn-custom svg { position: relative; right: -6px; top: 1px; }
 .btn-custom:hover { background: #67ebe2; }
 #myPopup .modal-body {padding: 0;}
@@ -69,9 +70,7 @@ header nav li { display: flex; align-items: center; justify-content: center; }
 .swiper-slide { text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center; }
 .swiper-slide img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .swiper-button-next:hover,
-.swiper-button-prev:hover{
-    transform: scale(1.1);
-}
+.swiper-button-prev:hover{transform: scale(1.1);}
 .swiper-button-prev:after,
 .swiper-button-next:after { display: none; }
 .swiper-button-next.swiper-button-disabled { background: url(../images/arrow-right.png); }
@@ -144,18 +143,13 @@ ul.social { padding: 0; list-style: none; display: flex; gap: 30px; flex-directi
 .timeline-text {padding: 6px 30px;position: absolute;top: -80px;display: flex;flex-direction: column-reverse;}
 .timelineSwiper .swiper-slide.slide1 .timeline-text,
 .timelineSwiper .swiper-slide.slide3 .timeline-text,
-.timelineSwiper .swiper-slide.slide5 .timeline-text {top: 60px;display: flex;flex-direction: column;}
+.timelineSwiper .swiper-slide.slide5 .timeline-text,
+.timelineSwiper .swiper-slide.slide7 .timeline-text,
+.timelineSwiper .swiper-slide.slide9 .timeline-text,
+.timelineSwiper .swiper-slide.slide11 .timeline-text{top: 60px;display: flex;flex-direction: column;}
 .timelineSwiper.button-bottom { padding:65px 0 130px; }
-.timeline-text{
-	    transition: all 0.5s;
-	    cursor: pointer;
-}
-.timeline-text:hover {
-        box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 15%);
-        background: #fff;
-        border-radius: 10px;
-        transform: scale(1.1);
-}
+.timeline-text { transition: all 0.5s; cursor: pointer; }
+.timeline-text:hover { box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 15%); background: #fff; border-radius: 10px; transform: scale(1.1); }
 span.time { border-radius: 10px; background: #FFF; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15); display: inline-block; width: 100px; margin: 0 auto; padding: 5px; }
 .patents h3 { color: #272727;font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; }
 .patents p { color: #535353;font-size: 16px; font-style: normal; font-weight: 400; line-height: 26px; }
@@ -223,7 +217,13 @@ span.time { border-radius: 10px; background: #FFF; box-shadow: 0px 0px 20px 0px 
 .our-locations h3 { color: #272727;font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; }
 .our-locations p { color: #535353;font-size: 16px; font-style: normal; font-weight: 400; line-height: 24px; }
 .our-locations h5 { color: #014088;font-size: 20px; font-style: normal; font-weight: 500; line-height: 28px; margin-top: 15px; }
-
+.india-map { position: relative; }
+.india-map .pint1 { position: absolute; top: 27%; left: 30%; z-index: 9; }
+.india-map .pint2 {position: absolute;top: 29%;left: 27%;z-index: 9;}
+.india-map .pint3 {position: absolute;top: 56%;left: 37%;z-index: 9;}
+.india-map .pint1 img,
+.india-map .pint2 img,
+.india-map .pint3 img{ width: 20px; border-radius: 100%; }
 .innovation-centre h3 { color: #272727;font-size: 40px; font-style: normal; font-weight: 400; line-height: 40px; }
 .innovation-centre p { color: #535353;font-size: 16px; font-style: normal; font-weight: 400; line-height: 26px; }
 
@@ -248,7 +248,6 @@ span.time { border-radius: 10px; background: #FFF; box-shadow: 0px 0px 20px 0px 
 
 .profile { padding: 40px 0; }
 .profile-text { border-radius: 10px; background: #F1F9F9; height: 100%; padding: 30px 90px 30px 30px; }
-
 .featured { padding: 40px 0; }
 .featured h3 { color: #272727; font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; margin-bottom: 25px; }
 span.date { color: #B7B7B7; font-size: 16px; font-style: normal; font-weight: 400; line-height: 28px; }
@@ -259,25 +258,6 @@ span.date { color: #B7B7B7; font-size: 16px; font-style: normal; font-weight: 40
 .latest-updates h3 { color: #272727; font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; margin-bottom: 25px; }
 .latest-updates .post h3 { color: #373737; font-size: 18px; font-style: normal; font-weight: 500; line-height: 26px; margin: 10px 0; }
 .latest-updates .post { margin: 20px 0; padding-right: 20px; }
-.clients-logo {
-    padding: 40px 0;
-}
-ul.logo-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: 20px;
-}
-
-ul.logo-list li {
-    border-radius: 10px;
-    background: #FFF;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
-    flex: 0 0 18%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 215px;
-    height: 138px;
-    flex-shrink: 0;
-}
+.clients-logo { padding: 40px 0; }
+ul.logo-list { display: flex; flex-wrap: wrap; list-style: none; gap: 20px; }
+ul.logo-list li { border-radius: 10px; background: #FFF; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20); flex: 0 0 18%; display: flex; justify-content: center; align-items: center; width: 215px; height: 138px; flex-shrink: 0; }

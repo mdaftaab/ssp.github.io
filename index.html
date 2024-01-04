@@ -66,18 +66,13 @@
   </div>
   <div id="slider">
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-      <!-- Indicators/dots -->
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
       </div>
-
-      <!-- The slideshow/carousel -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <!-- <img src="images/img-10.png" alt="" class="d-block" style="width:100%"> -->
           <video poster="images/banner1.jpg" controls muted loop autoplay src="video/banner1.mp4"></video>
           <div class="carousel-caption">
             <h3>World of <br />
@@ -272,7 +267,7 @@
       </div>
     </div>
   </section>
-   <section class="certifications">
+  <!-- <section class="certifications">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -321,7 +316,44 @@
         </div>
       </div>
     </div>
+  </section> -->
+
+  <section class="quality">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Quality Certifications & Standards</h3>
+          <p class="col-12 col-lg-6 mx-auto">We has worked tirelessly to bring about a silent revolution in process technology</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col text-center">
+          <img src="images/asme-logo.png" alt="" class="mx-auto img-fluid">
+        </div>
+        <div class="col text-center">
+          <img src="images/a3.png" alt="" class="mx-auto img-fluid">
+        </div>
+        <div class="col text-center">
+          <img src="images/iso-icon5.png" alt="" class="mx-auto img-fluid">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-3 text-center">
+          <img src="images/iso-icon.png" alt="" class="mx-auto img-fluid">
+        </div>
+        <div class="col-3 text-center">
+          <img src="images/iso-icon2.png" alt="" class="mx-auto img-fluid">
+        </div>
+        <div class="col-3 text-center">
+          <img src="images/iso-icon3.png" alt="" class="mx-auto img-fluid">
+        </div>
+        <div class="col-3 text-center">
+          <img src="images/iso-icon4.png" alt="" class="mx-auto img-fluid">
+        </div>
+      </div>
+    </div>
   </section>
+
   <section class="share">
     <div class="container">
       <div class="row">
@@ -447,38 +479,35 @@
     </div>
   </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.3.4/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.3.4/dist/ScrollTrigger.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+  const video = document.getElementById("video");
+  const circlePlayButton = document.getElementById("circle-play-b");
 
-
-
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-  <script src="js/lightbox.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.3.4/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.3.4/dist/ScrollTrigger.js"></script>
-  <script src="js/custom.js"></script>
-  <script type="text/javascript">
-    const video = document.getElementById("video");
-    const circlePlayButton = document.getElementById("circle-play-b");
-
-    function togglePlay() {
-      if (video.paused || video.ended) {
-        video.play();
-      } else {
-        video.pause();
-      }
+  function togglePlay() {
+    if (video.paused || video.ended) {
+      video.play();
+    } else {
+      video.pause();
     }
+  }
 
-    circlePlayButton.addEventListener("click", togglePlay);
-    video.addEventListener("playing", function () {
-      circlePlayButton.style.opacity = 0;
-    });
-    video.addEventListener("pause", function () {
-      circlePlayButton.style.opacity = 1;
-    });
-  </script>
+  circlePlayButton.addEventListener("click", togglePlay);
+  video.addEventListener("playing", function () {
+    circlePlayButton.style.opacity = 0;
+  });
+  video.addEventListener("pause", function () {
+    circlePlayButton.style.opacity = 1;
+  });
+</script>
 </body>
 </html>
