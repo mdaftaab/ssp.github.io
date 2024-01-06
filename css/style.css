@@ -149,7 +149,7 @@ ul.social { padding: 0; list-style: none; display: flex; gap: 30px; flex-directi
 .timelineSwiper .swiper-slide.slide11 .timeline-text{top: 60px;display: flex;flex-direction: column;}
 .timelineSwiper.button-bottom { padding:65px 0 130px; }
 .timeline-text { transition: all 0.5s; cursor: pointer; }
-.timeline-text:hover { box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 15%); background: #fff; border-radius: 10px; transform: scale(1.1); }
+.timeline-text:hover {transform: scale(1.1); }
 span.time { border-radius: 10px; background: #FFF; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15); display: inline-block; width: 100px; margin: 0 auto; padding: 5px; }
 .patents h3 { color: #272727;font-size: 50px; font-style: normal; font-weight: 400; line-height: 40px; }
 .patents p { color: #535353;font-size: 16px; font-style: normal; font-weight: 400; line-height: 26px; }
@@ -190,11 +190,11 @@ span.time { border-radius: 10px; background: #FFF; box-shadow: 0px 0px 20px 0px 
 .project p { color: #414141; font-family: var(--font2); font-size: 20px; font-style: normal; font-weight: 500; line-height: normal; }
 .project .tab-content { border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
 .project .tab-content ul { padding: 0; list-style: none; }
-.project .tab-content ul li { padding: 10px; display: flex; align-items: center; gap: 20px; border-top: 1px solid #ddd; min-height: 60px; }
-.project .tab-content ul li:last-child { border-bottom: 1px solid #ddd; }
+.project .tab-content ul li a{ padding: 10px; display: flex; align-items: center; gap: 20px; border-top: 1px solid #ddd; min-height: 60px;    text-decoration: none;}
+.project .tab-content ul li:last-child a{ border-bottom: 1px solid #ddd; }
 .project .tab-content .tab-pane { padding: 0; }
 .project .tab-content ul li:first-child { border-top: none; }
-.project a.nav-link { color: #272727; text-align: center; font-family: var(--font2); font-size: 18px; font-style: normal; font-weight: 500; line-height: normal; }
+.project a.nav-link {color: #272727;text-align: center;font-family: var(--font2);font-size: 18px;font-style: normal;font-weight: 500;line-height: normal;min-height: 90px;display: flex;justify-content: center;align-items: center;}
 .project a.nav-link.active { color: #1F43A1; font-family: var(--font2); font-size: 18px; font-style: normal; font-weight: 500; line-height: normal; }
 .project { padding: 40px 0; }
 .addresses { padding: 40px 0; }

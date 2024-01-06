@@ -63,6 +63,10 @@ var swiper = new Swiper(".patentsSwiper", {
 });
 
 var swiper = new Swiper(".timelineSwiper", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
 	navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
