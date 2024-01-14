@@ -110,10 +110,10 @@ var swiper = new Swiper(".innovationSwiper", {
 });
 
 var swiper = new Swiper(".counterSwiper", {
-    loop: true,
-    autoplay: {
-     delay: 3000,
-    },
+    // loop: true,
+    // autoplay: {
+    //  delay: 3000,
+    // },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -136,19 +136,34 @@ var swiper = new Swiper(".counterSwiper", {
 
 
 // Counter animation code
-$('#counter').waypoint(function() {
-    $('.count').each(function () {
-        $(this).prop('Counter', 0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 2000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
+var counterAnimated = false;
+
+$(window).on('scroll', function() {
+    if (!counterAnimated && isElementInViewport($('#counter'))) {
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
         });
-    }, { offset: '80%' });
-}, { offset: '80%' });
+        counterAnimated = true; // Set the flag to true after the animation is triggered
+    }
+});
+
+// Function to check if an element is in the viewport
+function isElementInViewport(el) {
+    var rect = el[0].getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
+
 
 // ---------- SideBar
 function openNav() {
@@ -160,18 +175,7 @@ function closeNav() {
 }
 
 jQuery(document).ready(function () {
-  
     setTimeout(function () {
       jQuery('#myPopup').modal('show');
     }, 0);
-
-  // jQuery('.btn-yes').on('click', function () {
-  //   jQuery('#myModal').modal('hide');
-  //   Cookies.set('modalShown', 'true', { expires: 7 });
-  // });
-  
-  // jQuery('.btn-no').on('click', function () {
-  //   Cookies.remove('modalShown');
-  // });
-  
 });
