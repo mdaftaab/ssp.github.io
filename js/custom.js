@@ -5,10 +5,18 @@ var swiper = new Swiper(".serviceSwiper", {
     },
     breakpoints: {
         640: {
+          autoplay: {
+            delay: 3000,
+          },
+          loop: true,
           slidesPerView: 1,
-          spaceBetween: 0,
+          spaceBetween: 10,
         },
         768: {
+          autoplay: {
+            delay: 3000,
+          },
+          loop: true,
           slidesPerView: 2,
           spaceBetween: 10,
         },

@@ -9,11 +9,11 @@
 @media only screen and (max-width:767px){
     /* For mobile phones: */
 	header nav li.nav-item.extra { display: inline-block; }
-	#slider { margin-top: 58px; }
+	#slider {margin-top: 60px;}
 	.navbar.navbar-expand-sm { background: #000; }
 	.navbar-brand { width: 20%; }
 	button.navbar-toggler { position: absolute; right: 5px; top: 13px; color: #fff; z-index: 99; font-size: 26px; }
-	#slider .carousel-caption h3 { font-size: 40px; line-height: 50px; }
+	#slider .carousel-caption h3 {font-size: 32px;line-height: 40px;}
 	#slider .carousel-caption { bottom: 20px; }
 	.navbar-toggler:focus { box-shadow: none; }
 	#mynavbar { background: rgb(0 0 0 / 80%); padding: 20px; padding-top: 30px; position: absolute; top: 60px; left: 0; width: 100%; z-index: 9; }
@@ -23,8 +23,8 @@
 	.about-us .text-box h2 { font-size: 22px; }
 	section.about-us .text-box { padding-top: 20px; }
 	.our-service { padding-left: 0; }
-	.serviceSwiper.button-bottom .swiper-button-prev { left: 40%; transform: translateX(-50%); }
-	.serviceSwiper.button-bottom .swiper-button-next { left: 60%; transform: translateX(-50%); }
+	.serviceSwiper.button-bottom .swiper-button-prev {left: 40%;transform: translateX(-70%);}
+	.serviceSwiper.button-bottom .swiper-button-next {left: 60%;transform: translateX(-40%);}
 	.global-presence h3 { font-size: 22px; }
 	.global-presence p { width: 75%; }
 	.our-service h3 { font-size: 26px; }
@@ -61,7 +61,7 @@
 	.our-locations h3,
 	.innovation-centre h3,
 	.latest-innovation h3,
-	.works .card .card-header a { font-size: 32px; line-height: 40px; }
+	.works .card .card-header a {font-size: 22px;line-height: 26px;}
 	.latest-innovation { padding: 20px; }
 	.latest-updates .post { padding-right: 7px; }
 	.latest-updates .post .post-img img { width: 100%; }
@@ -72,9 +72,22 @@
 	.latest-updates { padding-bottom: 0; }
 	section.patents .patentsSwiper.button-top { padding-top: 0; padding-bottom: 70px; }
 	.patents-box { top: 15px; }
-	.patentsSwiper.button-top .swiper-button-prev { left: 40%; transform: translateX(-50%); top: auto; bottom: 0; }
-	.patentsSwiper.button-top .swiper-button-next { left: 60%; transform: translateX(-50%); top: auto; bottom: 0; }
-
+	.patentsSwiper.button-top .swiper-button-prev {left: 40%;transform: translateX(-70%);top: auto;bottom: 0;}
+	.patentsSwiper.button-top .swiper-button-next {left: 60%;transform: translateX(-40%);top: auto;bottom: 0;}
+	ul.logo-list li {flex: 0 0 45%;width: 215px;height: 138px;}
+	.our-service .item-box { padding: 40px 45px; }
+	.footer-botton ul { flex-direction: column; height: auto; align-items: baseline; gap: 10px; }
+	.footer-botton ul { font-size: 14px; }
+	.footer-botton { padding: 20px 0; }
+	.footer-botton p { text-align: left; font-size: 14px; }
+	footer h4 { margin: 15px 0; border-bottom: 1px solid #ccc; padding-bottom: 8px; }
+	.modal .modal-body h2 {font-size: 18px;}
+	ul.number li {font-size: 18px;}
+	section.innovation-centre h5 {margin-top: 20px;}
+	.works .card .card-header {padding: 10px;}
+	ul.logo-list {
+    padding-left: 10px;
+}
 }
 @media only screen and (max-width:375px){
 
