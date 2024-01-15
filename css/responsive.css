@@ -61,7 +61,7 @@
 	.our-locations h3,
 	.innovation-centre h3,
 	.latest-innovation h3,
-	.works .card .card-header a {font-size: 22px;line-height: 26px;}
+	.works .card .card-header a {font-size: 20px;line-height: 26px;}
 	.latest-innovation { padding: 20px; }
 	.latest-updates .post { padding-right: 7px; }
 	.latest-updates .post .post-img img { width: 100%; }
@@ -85,9 +85,9 @@
 	ul.number li {font-size: 18px;}
 	section.innovation-centre h5 {margin-top: 20px;}
 	.works .card .card-header {padding: 10px;}
-	ul.logo-list {
-    padding-left: 10px;
-}
+	ul.logo-list { padding-left: 10px; }
+	.works .card .card-header a span { font-size: 14px; line-height: 22px; padding-top: 6px; }
+	.btn-custom { font-size: 14px; padding: 4px 20px; line-height: 26px; }
 }
 @media only screen and (max-width:375px){
 
