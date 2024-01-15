@@ -1,32 +1,3 @@
-var swiper = new Swiper(".serviceSwiper", {
-	navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        640: {
-          autoplay: {
-            delay: 3000,
-          },
-          loop: true,
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        768: {
-          autoplay: {
-            delay: 3000,
-          },
-          loop: true,
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        1024: {
-          slidesPerView: 3.5,
-          spaceBetween: 20,
-        },
-    }
-});
-
 var swiper = new Swiper(".certificationSwiper", {
 	loop: true,
 	navigation: {
@@ -118,10 +89,6 @@ var swiper = new Swiper(".innovationSwiper", {
 });
 
 var swiper = new Swiper(".counterSwiper", {
-    // loop: true,
-    // autoplay: {
-    //  delay: 3000,
-    // },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -137,6 +104,27 @@ var swiper = new Swiper(".counterSwiper", {
         },
         1024: {
           slidesPerView: 4,
+          spaceBetween: 20,
+        },
+    }
+});
+
+var swiper = new Swiper(".serviceSwiper", {
+  navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 3.5,
           spaceBetween: 20,
         },
     }

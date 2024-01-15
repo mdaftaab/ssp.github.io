@@ -111,7 +111,7 @@ footer ul { padding: 0; list-style: none; margin: 0; display: flex; flex-directi
 footer ul li a { color: #272727;font-size: 16px; font-style: normal; font-weight: 500; line-height: 26px; text-decoration: none; }
 footer address{margin-bottom: 0;}
 address span { display: block; color: #1F43A1;font-size: 16px; font-style: normal; font-weight: 500; line-height: 26px; margin: 8px 0; }
-address a { color: #272727;font-size: 16px; font-style: normal; font-weight: 400; line-height: 26px; text-decoration-line: underline; }
+address a { color: #272727;font-size: 16px; font-style: normal; font-weight: 400; line-height: 26px; text-decoration: none; }
 footer ul li a img { margin: 0; }
 footer ul li a:hover {color: #1f43a1;}
 ul.number { padding: 0; list-style: none; }
